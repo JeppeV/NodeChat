@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Socket.IO Chat </title>
+        <style>
+            
+        </style>
+        <link rel="stylesheet" type="text/css" href="client.css"/>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+        <div id="header">
+            <h1>Welcome to NodeChat! Enter your username below.</h1>
+            <span title="Back">
+                <img src="res/up.png" alt="Up one level" id="up"/>
+            </span>
+            <span title="Synchronize Chatrooms">
+                <img src="res/sync.png" alt="Sync chatrooms" id="sync"/>
+            </span>
+        </div>
+        <div id="users_container">
+            <h3> Users </h3>
+            <ul id="users"></ul>
+        </div>
+        <div id="container">
+            <ul id="messages"></ul>
+        </div>
+        
+        <form action="">
+            <input type="text" id="m" autocomplete="off" maxlength="8" placeholder="Enter username" />
+            <input type="submit" id="button" value="Go"/>
+        </form>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="client.js"></script>
+    </body>
+
+
+</html>
